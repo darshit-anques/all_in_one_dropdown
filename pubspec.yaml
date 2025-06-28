@@ -1,6 +1,6 @@
 name: all_in_one_dropdown
 description: "A customizable Flutter package that supports single dropdown, searchable dropdown, and multi-select dropdown in one unified widget."
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/darshit-anques/all_in_one_dropdown
 
 environment:
