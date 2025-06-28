@@ -1,49 +1,116 @@
 import 'package:flutter/material.dart';
 import 'common_listview_widget.dart';
 
+/// A model class representing a single dropdown item.
 class DropDownDataModel {
+  /// The unique identifier of the item.
   final String? id;
+
+  /// The display text of the item.
   final String? title;
 
+  /// Creates a dropdown data model with [id] and [title].
   DropDownDataModel({this.id, this.title});
 
   @override
   bool operator ==(Object other) =>
-      identical(this, other) || other is DropDownDataModel && runtimeType == other.runtimeType && id == other.id && title == other.title;
+      identical(this, other) ||
+          other is DropDownDataModel &&
+              runtimeType == other.runtimeType &&
+              id == other.id &&
+              title == other.title;
 
   @override
   int get hashCode => id.hashCode ^ title.hashCode;
 }
 
+/// A customizable dropdown widget that supports optional search functionality.
+///
+/// This widget can be used for single-selection dropdowns, with full control
+/// over appearance, behavior, and layout.
 class CustomDropdown extends StatefulWidget {
+  /// The list of items to show in the dropdown.
   final List<DropDownDataModel> items;
+
+  /// The currently selected item.
   final DropDownDataModel? selectedItem;
+
+  /// Callback triggered when an item is selected.
   final ValueChanged<DropDownDataModel> onChanged;
+
+  /// Hint text to show when no item is selected.
   final String hintText;
+
+  /// Whether to show the search box above the list.
   final bool isSearch;
+
+  /// Border color of the dropdown button.
   final Color? borderColor;
+
+  /// Font size of the dropdown text.
   final double? textSize;
+
+  /// Font size of the selected item in the dropdown list.
   final double? selectedFontSize;
+
+  /// Icon color of the dropdown arrow.
   final Color? dropdownIconColor;
+
+  /// Text color inside the dropdown button.
   final Color? textColor;
+
+  /// Hint text color.
   final Color? hintTextColor;
+
+  /// Background color of the dropdown button.
   final Color? buttonBackgroundColor;
+
+  /// Text color of the search input.
   final Color? searchTextColor;
+
+  /// Background color of the search input.
   final Color? searchBackgroundColor;
+
+  /// Icon color of the search input.
   final Color? searchIconColor;
+
+  /// Text color inside the dropdown list.
   final Color? dropdownTextColor;
+
+  /// Background color of the dropdown list.
   final Color? dropdownBackgroundColor;
+
+  /// Text color of the selected item in the dropdown list.
   final Color? selectedDataColor;
+
+  /// Background color of the selected item in the dropdown list.
   final Color? selectedDataBgColor;
+
+  /// Border radius of the dropdown button.
   final double? radius;
+
+  /// Border radius of the dropdown menu.
   final double? menuRadius;
+
+  /// Border radius of the search field.
   final double? searchTextFieldRadius;
+
+  /// Padding inside the search field.
   final EdgeInsetsGeometry? searchTextFieldPadding;
+
+  /// Padding inside the dropdown button.
   final EdgeInsetsGeometry? buttonPadding;
+
+  /// Padding inside the dropdown list menu.
   final EdgeInsetsGeometry? menuPadding;
+
+  /// Separator builder between dropdown list items.
   final Widget Function(BuildContext, int)? separatorBuilder;
+
+  /// Size of the dropdown icon.
   final double? dropdownIconSize;
 
+  /// Creates a [CustomDropdown] widget.
   const CustomDropdown({
     super.key,
     required this.items,
@@ -96,7 +163,7 @@ class _CustomDropdownState extends State<CustomDropdown> with WidgetsBindingObse
       try {
         selectedValue = widget.items.firstWhere((element) => element.title == widget.selectedItem!.title && element.id == widget.selectedItem!.id);
       } catch (e) {
-        print(e);
+        debugPrint("$e");
       }
     }
     filteredItems = widget.items;
@@ -147,7 +214,7 @@ class _CustomDropdownState extends State<CustomDropdown> with WidgetsBindingObse
         try {
           selectedValue = widget.items.firstWhere((element) => element.title == widget.selectedItem!.title && element.id == widget.selectedItem!.id);
         } catch (e) {
-          print(e);
+          debugPrint("$e");
         }
       });
     }

@@ -2,39 +2,105 @@ import 'package:flutter/material.dart';
 import 'common_listview_widget.dart';
 import 'custom_dropdown.dart';
 
+/// A customizable multi-select dropdown widget with optional search functionality.
+///
+/// Use this widget to allow users to select multiple items from a dropdown
+/// with optional search input and visual chips for selected values.
 class CustomDropdownMultiSelect extends StatefulWidget {
+  /// The list of all available items.
   final List<DropDownDataModel> items;
+
+  /// The list of currently selected items.
   final List<DropDownDataModel> selectedItems;
+
+  /// Callback when selected items change.
   final ValueChanged<List<DropDownDataModel>> onChanged;
+
+  /// Hint text shown when nothing is selected.
   final String hintText;
+
+  /// Whether to show the search box.
   final bool isSearch;
+
+  /// Border color for the dropdown button.
   final Color? borderColor;
+
+  /// Font size for dropdown text.
   final double? textSize;
+
+  /// Color of the dropdown arrow icon.
   final Color? dropdownIconColor;
+
+  /// Text color of selected items.
   final Color? textColor;
+
+  /// Color of the hint text.
   final Color? hintTextColor;
+
+  /// Background color of the dropdown button.
   final Color? buttonBackgroundColor;
+
+  /// Text color inside dropdown menu.
   final Color? dropdownTextColor;
+
+  /// Background color of the dropdown menu.
   final Color? dropdownBackgroundColor;
+
+  /// Text color of selected options inside dropdown.
   final Color? selectedDataColor;
+
+  /// Background color of selected options inside dropdown.
   final Color? selectedDataBgColor;
+
+  /// Border radius of the dropdown button.
   final double? radius;
+
+  /// Border radius of the dropdown menu.
   final double? menuRadius;
+
+  /// Padding inside the dropdown button.
   final EdgeInsetsGeometry? buttonPadding;
+
+  /// Padding inside the dropdown menu.
   final EdgeInsetsGeometry? menuPadding;
+
+  /// Custom separator builder between dropdown list items.
   final Widget Function(BuildContext, int)? separatorBuilder;
+
+  /// Color of the text inside the search field.
   final Color? searchTextColor;
+
+  /// Background color of the search field.
   final Color? searchBackgroundColor;
+
+  /// Color of the search icon.
   final Color? searchIconColor;
+
+  /// Padding inside the search field.
   final EdgeInsetsGeometry? searchTextFieldPadding;
+
+  /// Border radius of the search field.
   final double? searchTextFieldRadius;
+
+  /// Font size for selected chips.
   final double? selectedFontSize;
+
+  /// Checkbox fill color.
   final Color? checkBoxColor;
+
+  /// Checkbox tick color.
   final Color? checkColor;
+
+  /// Size of the dropdown icon.
   final double? dropdownIconSize;
+
+  /// Size of the close icon in chips.
   final double? chipCancelIconSize;
+
+  /// Scale for checkbox size.
   final double? scale;
 
+  /// Creates a [CustomDropdownMultiSelect] widget.
   const CustomDropdownMultiSelect({
     super.key,
     required this.items,
@@ -389,7 +455,11 @@ class _CustomDropdownMultiSelectState extends State<CustomDropdownMultiSelect> w
   }
 }
 
+/// A helper class that provides a reusable checkbox widget with styling options.
 class CommonCheckBox {
+  /// Returns a styled checkbox widget.
+  ///
+  /// Use this in dropdown lists for multi-selection UI.
   static Widget checkBox({
     bool isChecked = false,
     required Function(bool?) onChanged,
@@ -415,3 +485,4 @@ class CommonCheckBox {
     );
   }
 }
+
