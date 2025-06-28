@@ -27,17 +27,17 @@ Add the following line to your `pubspec.yaml`:
 ## 📸 Screenshot
 
 <p align="center">
-  <img src="https://github.com/darshit-anques/all_in_one_dropdown/blob/main/assets/Screenshot1.png?raw=true" width="30%" />
+  <img src="https://github.com/darshit-anques/all_in_one_dropdown/blob/master/assets/Screenshot1.png?raw=true" width="30%" />
   <br/>Normal Dropdown
 </p>
 
 <p align="center">
-  <img src="https://github.com/darshit-anques/all_in_one_dropdown/blob/main/assets/Screenshot2.png?raw=true" width="30%" />
+  <img src="https://github.com/darshit-anques/all_in_one_dropdown/blob/master/assets/Screenshot2.png?raw=true" width="30%" />
   <br/>Searchable Dropdown
 </p>
 
 <p align="center">
-  <img src="https://github.com/darshit-anques/all_in_one_dropdown/blob/main/assets/Screenshot3.png?raw=true" width="30%" />
+  <img src="https://github.com/darshit-anques/all_in_one_dropdown/blob/master/assets/Screenshot3.png?raw=true" width="30%" />
   <br/>Multi-Select Dropdown
 </p>
 
