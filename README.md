@@ -169,3 +169,7 @@ class ExampleDropdownScreen extends StatelessWidget {
   }
 }
 ```
+## LICENSE!
+
+**drop_down_list**
+is [MIT-licensed.](https://github.com/Mindinventory/drop_down_list/blob/main/LICENSE)
