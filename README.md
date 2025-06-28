@@ -43,31 +43,27 @@ Add the following line to your `pubspec.yaml`:
 
 ## 📸 Screenshot
 
+```html
 <table>
   <tr>
     <td>
-      <center>
-        <img src="https://github.com/darshit-anques/all_in_one_dropdown/blob/master/assets/Screenshot1.png?raw=true" width="200" alt=""/>
+        <img src="https://github.com/darshit-anques/all_in_one_dropdown/blob/master/assets/Screenshot1.png?raw=true"/>
         <br/>
         <b>Normal Dropdown</b>
-      </center>
     </td>
     <td>
-      <center>
-        <img src="https://github.com/darshit-anques/all_in_one_dropdown/blob/master/assets/Screenshot2.png?raw=true" width="200" alt=""/>
+        <img src="https://github.com/darshit-anques/all_in_one_dropdown/blob/master/assets/Screenshot2.png?raw=true"/>
         <br/>
         <b>Searchable Dropdown</b>
-      </center>
     </td>
     <td>
-      <center>
-        <img src="https://github.com/darshit-anques/all_in_one_dropdown/blob/master/assets/Screenshot3.png?raw=true" width="200" alt=""/>
+        <img src="https://github.com/darshit-anques/all_in_one_dropdown/blob/master/assets/Screenshot3.png?raw=true" alt=""/>
         <br/>
         <b>Multi-Select Dropdown</b>
-      </center>
     </td>
   </tr>
 </table>
+```
 
 
 ```yaml
