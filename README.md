@@ -37,13 +37,8 @@ This package is designed to be reusable and flexible, making dropdown integratio
 - Android Gradle Plugin >=8.7.3
 - Gradle wrapper >=8.12
 
-## 🚀 Installation
-
-Add the following line to your `pubspec.yaml`:
-
 ## 📸 Screenshot
 
-```html
 <table>
   <tr>
     <td>
@@ -63,20 +58,21 @@ Add the following line to your `pubspec.yaml`:
     </td>
   </tr>
 </table>
-```
 
+## 🚀 Installation
 
+Add the following line to your `pubspec.yaml`:
 ```yaml
 dependencies:
   all_in_one_dropdown: ^1.0.0
 ```
 
+### Import library in your file
 ```dart
 import 'package:all_in_one_dropdown/all_in_one_dropdown.dart';
 ```
 
 ### Create below variables
-
 ```dart
 final selectedItems = DropDownDataModel();
 final items = <DropDownDataModel>[
@@ -93,6 +89,7 @@ final items = <DropDownDataModel>[
 ];
 ```
 
+### This is how we can used
 ```dart
 Container(
   child: CustomDropdown(
