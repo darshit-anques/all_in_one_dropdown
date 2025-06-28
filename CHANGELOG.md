@@ -2,7 +2,7 @@
 
 All notable changes to the `all_in_one_dropdown` package will be documented in this file.
 
-## [1.0.0] - 2025-06-28
+## [0.0.1] - 2025-06-28
 
 ### Added
 - Initial release of the `all_in_one_dropdown` package.
